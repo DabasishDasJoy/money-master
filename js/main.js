@@ -29,6 +29,9 @@ document.getElementById('btn-save').addEventListener('click', function () {
     if (getInputFieldValueById('save') > 100) {
         alert('You cannot save more than 100%');
     }
+    else if(getInputFieldValueById('save') < 0){
+        alert('Input should not be left negative');
+    }
     else {
         const saveAmount = getInputFieldValueById('income') * (getInputFieldValueById('save') / 100);
         if (saveAmount > getElementValueById('balance')) {
