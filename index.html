@@ -23,7 +23,7 @@
     <main class="mt-10">
         <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-x-12">
             <div class="flex lg:justify-end md:justify-center">
-                <img src="images/Pexels Photo by Karolina Grabowska.png" alt="" class="w-4/5">
+                <img src="images/Pexels Photo by Karolina Grabowska.png" alt="" class="object-fit">
             </div>
             <div class="flex lg:justify-start md:justify-center">
                 <div class="w-4/5 text-center bg-slate-50 p-14">
@@ -56,8 +56,21 @@
                         <h1 class="text-2xl font-semibold mb-3">Total Expense: <span id="total-expense">00</span></h1>
                         <h1 class="text-2xl font-semibold mb-3">Balance: <span id="balance">00</span></h1>
                     </div>
-
+    
+                    <div>
+                        <div class="-ml-1">
+                            <label for="save">Save: </label>
+                            <input type="text" name="" id="save" class="bg-slate-300 outline-0 pl-3 py-0.5 w-40">
+                            <label for="save">%</label>
+                            <button id="btn-save" class="ml-2 bg-sky-600 rounded-sm py-1 px-8 mt-5 text-white text-xl font-semibold">Save</button>
+                        </div>
+                    </div>
+                    <div class="mt-5">
+                        <h1 class="text-2xl font-semibold mb-3">Saving Amount: <span id="saving-amount">00</span></h1>
+                        <h1 class="text-2xl font-semibold mb-3">Remaining Balance: <span id="remaining-balance">00</span></h1>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </main>
