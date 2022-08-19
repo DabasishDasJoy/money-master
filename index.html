@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,9 +14,11 @@
     <!-- ================================Font Icons================================ -->
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <h1 class="text-center text-5xl font-bold mt-10 text-blue-400">Money Master <i class="fa-solid fa-sack-dollar"></i></h1>
+        <h1 class="text-center text-5xl font-bold mt-10 text-blue-400">Money Master <i
+                class="fa-solid fa-sack-dollar"></i></h1>
     </header>
     <main class="mt-10">
         <div class="grid lg:grid-cols-2 md:grid-cols-1 gap-x-12">
@@ -24,10 +27,40 @@
             </div>
             <div class="flex lg:justify-start md:justify-center">
                 <div class="w-4/5 text-center bg-slate-50 p-14">
-                    <h1 class="text-2xl font-semibold">Income</h1>
+                    <div class="mb-5">
+                        <h1 class="text-2xl font-semibold mb-3">Income</h1>
+                        <label for="income">Income: </label>
+                        <input type="text" name="" id="income" class="bg-slate-300 outline-0 pl-3 py-0.5">
+                    </div>
+                    <div class="mb-5">
+                        <h1 class="text-2xl font-semibold mb-3">Expenses</h1>
+                        <div>
+                            <div class="mb-5 ml-3">
+                                <label for="food">Food: </label>
+                                <input type="text" name="" id="food" class="bg-slate-300 outline-0 pl-3 py-0.5">
+                            </div>
+
+                            <div class="mb-5 ml-4">
+                                <label for="rent">Rent: </label>
+                                <input type="text" name="" id="rent" class="bg-slate-300 outline-0 pl-3 py-0.5">
+                            </div>
+
+                            <div class="-ml-1">
+                                <label for="clothes">Clothes: </label>
+                                <input type="text" name="" id="clothes" class="bg-slate-300 outline-0 pl-3 py-0.5">
+                            </div>
+                            <button id="btn-calculate" class="bg-sky-600 rounded-sm py-1 px-8 mt-5 text-white text-xl font-semibold">Calculate</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-semibold mb-3">Total Expense: <span id="total-expense">00</span></h1>
+                        <h1 class="text-2xl font-semibold mb-3">Balance: <span id="balance">00</span></h1>
+                    </div>
+
                 </div>
             </div>
-          </div>
+        </div>
     </main>
 </body>
+
 </html>
